@@ -24,6 +24,7 @@ const HomeRootLayout = () => {
           ),
         }}
       />
+
       <Tabs.Screen
         name="search"
         options={{
@@ -34,16 +35,18 @@ const HomeRootLayout = () => {
           ),
         }}
       />
+
       <Tabs.Screen
         name="saved"
         options={{
           title: "Saved",
           headerShown: true,
           tabBarIcon: ({ color }) => (
-            <EvilIcons name="heart" size={27} color={color} />
+            <EvilIcons name="heart" size={24} color={color} />
           ),
         }}
       />
+
       <Tabs.Screen
         name="inbox"
         options={{
@@ -54,13 +57,14 @@ const HomeRootLayout = () => {
           ),
         }}
       />
+
       <Tabs.Screen
         name="profile"
         options={{
-          title: "Profile",
+          title: "profile",
           headerShown: true,
           tabBarIcon: ({ color }) => (
-            <FontAwesome name="user-o" size={24} color="black" />
+            <FontAwesome name="user-o" size={24} color={color} />
           ),
         }}
       />
